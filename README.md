@@ -1,26 +1,32 @@
-# Sistema de Gestión de Mascotas (POO en Python)
+# Práctica 1: Operaciones Estadísticas y Sistemas de Ecuaciones en Python
 
-Aplicación de consola en Python desarrollada para demostrar la implementación práctica de los pilares de la Programación Orientada a Objetos (POO). El sistema permite registrar, clasificar y visualizar diferentes tipos de mascotas (domésticas y exóticas) mediante un menú interactivo.
+Aplicación de consola en Python desarrollada para demostrar el manejo de entradas y salidas, así como la implementación de operaciones matemáticas y matriciales utilizando la biblioteca NumPy.
 
-## Conceptos Técnicos Aplicados
+## Conceptos Técnicos y Bibliotecas Aplicadas
 
-Este proyecto fue estructurado aplicando los siguientes fundamentos de ingeniería de software:
+Este proyecto se divide en dos módulos principales, aplicando los siguientes conceptos:
 
-* **Abstracción:** Implementación de clases abstractas usando el módulo `abc` de Python. Se definió la clase base `Mascota` de la cual derivan los demás objetos.
-* **Herencia:** Creación de una jerarquía de clases donde objetos como `Gato` y `Perro` heredan atributos y métodos de las clases `Domestica` y `Mascota`.
-* **Polimorfismo:** Sobrescritura del método abstracto `Habla()` en las clases hijas, permitiendo que cada objeto (ej. Gato, Perro, Tigre) tenga un comportamiento o sonido distinto al ser llamado.
-* **Encapsulamiento:** Protección del estado interno de los objetos utilizando atributos privados/protegidos (ej. `self._nombre`, `self._edad`) controlados a través de métodos `getters` y `setters`.
+* **Estadística Básica y Ordenamiento:** Cálculo de la media aritmética (`np.mean()`) y desviación estándar (`np.std()`) a partir de datos ingresados por el usuario.
+* Implementación del algoritmo de ordenamiento burbuja sobre arreglos generados aleatoriamente mediante `random.randint()`.
+* **Álgebra Lineal Computacional:** Resolución de sistemas de ecuaciones lineales 3x3 a través de representación matricial (Ax=B).
+* Utiliza la función `np.linalg.solve()` para calcular las incógnitas de manera eficiente.
+* **Manejo de Arreglos y Tipos de Datos:** Uso de `np.vstack()` para unir vectores y formar matrices completas.
+*  Incorporación de la función `eval()` para transformar las entradas de texto del usuario en listas numéricas operables.
+* **Control del Sistema:** Integración de los módulos `os` y `sys` para la limpieza de consola (`os.system('cls')`) y la finalización segura de los ciclos de ejecución (`sys.exit()`).
 
 ## Estructura del Proyecto
 
-* `pr1.py` / `pr2.py`: Scripts principales que contienen la lógica del menú, la inicialización de listas y las clases de los animales.
-* `Martinez_Martinez_Nicolas_Reporte.pdf`: Documentación formal del proyecto, diagramas y análisis de código.
-* `img/`: Carpeta con capturas de pantalla de las pruebas de ejecución.
+* `pr1.py`: Script principal enfocado en las operaciones de media aritmética, desviación estándar y el algoritmo de ordenamiento burbuja.
+* `pr2.py`: Script dedicado a la resolución del sistema de ecuaciones lineales mediante álgebra de matrices.
+* `Marttinez_Martinez_Nicolas_Reporte.pdf`: Documentación técnica detallada, análisis de código y capturas de prueba de las funciones operativas.
+* `img/`: Directorio con capturas de pantalla de la ejecución en consola.
 
-## ¿Cómo ejecutarlo?
+## Instrucciones de Ejecución
 
-1. Clona este repositorio en tu máquina local.
-2. Asegúrate de tener Python 3.x instalado.
-3. Ejecuta el script principal desde la terminal:
-   ```bash
+1. Asegúrate de tener Python 3.x instalado en el sistema.
+2. Instala la dependencia requerida ejecutando en la terminal:
+   pip install numpy
+3. Para ejecutar el módulo de estadística y ordenamiento:
    python pr1.py
+4. Para ejecutar el solucionador de ecuaciones matriciales:
+   python pr2.py
