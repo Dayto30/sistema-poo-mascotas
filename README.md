@@ -6,10 +6,10 @@ Aplicación de consola en Python desarrollada para demostrar la implementación 
 
 Este proyecto fue estructurado aplicando los siguientes fundamentos de ingeniería de software:
 
-* **Abstracción:** Implementación de clases abstractas usando el módulo `abc` de Python. [cite_start]Se definió la clase base `Mascota` de la cual derivan los demás objetos[cite: 168, 169].
-* [cite_start]**Herencia:** Creación de una jerarquía de clases donde objetos como `Gato` y `Perro` heredan atributos y métodos de las clases `Domestica` y `Mascota`[cite: 202, 203, 204].
-* [cite_start]**Polimorfismo:** Sobrescritura del método abstracto `Habla()` en las clases hijas, permitiendo que cada objeto (ej. Gato, Perro, Tigre) tenga un comportamiento o sonido distinto al ser llamado[cite: 208, 209, 210].
-* [cite_start]**Encapsulamiento:** Protección del estado interno de los objetos utilizando atributos privados/protegidos (ej. `self._nombre`, `self._edad`) controlados a través de métodos `getters` y `setters`[cite: 172, 174, 177].
+* **Abstracción:** Implementación de clases abstractas usando el módulo `abc` de Python. Se definió la clase base `Mascota` de la cual derivan los demás objetos.
+* **Herencia:** Creación de una jerarquía de clases donde objetos como `Gato` y `Perro` heredan atributos y métodos de las clases `Domestica` y `Mascota`.
+* **Polimorfismo:** Sobrescritura del método abstracto `Habla()` en las clases hijas, permitiendo que cada objeto (ej. Gato, Perro, Tigre) tenga un comportamiento o sonido distinto al ser llamado.
+* **Encapsulamiento:** Protección del estado interno de los objetos utilizando atributos privados/protegidos (ej. `self._nombre`, `self._edad`) controlados a través de métodos `getters` y `setters`.
 
 ## Estructura del Proyecto
 
